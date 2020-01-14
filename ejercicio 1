@@ -1,0 +1,30 @@
+
+#include <iostream>         // Codigo número 1 libreria estandar
+
+using namespace std;        //
+
+int main()                  // funcion principal
+{
+    int i = 10;             // daclaración y definición de variable "i" tipo entero con valor inicial de 10
+    float a = 1000.0;       // daclaración y definición de variable "a" tipo flotante con valor inicial de 1000.0
+    
+    while(i > 0)            // se realiza un condicional "while" cuyo argumento es verdadero para todos los  valores de "i" mayores que 0.
+    {
+        i /= 2;             
+        a /= 10;
+    }
+                            // como la condicion del argumento es verdadero pertmanece en el ciclo, 
+                            // luego la variable "i" se divide en 2, i = 5 y "a" se divide en 10, a = 100;
+                            // como la condicion del argumento es verdadero pertmanece en el ciclo,
+                            // luego la variable "i" se divide en 2, i = 2 tomando la parte entera  y "a" se divide en 10, a = 10;
+                            // como la condicion del argumento es verdadero pertmanece en el ciclo, 
+                            // luego la variable "i" se divide en 2, i = 1 y "a" se divide en 10, a = 1;
+                            // como la condicion del argumento es verdadero pertmanece en el ciclo,
+                            // luego la variable "i" se divide en 2, i = 0 y "a" se divide en 10, a = 0.1;
+                            // como la condicion del argumento es falsa porque cero no es mayor que cero  sale del ciclo. 
+                            // se realizaron 4 iteraciones.
+    
+    
+    cout<<"El valor final de la variable 'a' es: "<<a<<endl;        //el comando "cout" es para imprimir en pantalla el resultado de la variable "a" que es a = 0.1
+    return 0;                                                       // return valor que retorna la funcion
+}
