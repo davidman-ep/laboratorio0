@@ -1,0 +1,21 @@
+// Codigo número 2                
+#include <iostream>                    // libreria estandar de c++
+
+using namespace std;                    //
+
+int main()                              // funcion main principal
+{
+    int i = 1, j = 2;                   // declaración y definición de variables enteros "i" y "j", respectivamente de valor 1 y 2.
+    
+    if(i > j && j > i)                  // condicional if que no se cumple, porque un número no puede ser mayor y (AND logico) menor a la vez.
+        i++;                            // pos incremento a la variable i que no se cumple y i = 1.
+    if(i > j || j > i)                  // condicional if (OR logic), cumpliendose una de ellas "j > i".
+        j++;                            // toma la variable j y la aumenta en j = 3.
+    if(i | j)                           // condicional if con operador logico (OR binario), cumpliendose.
+        i++;                            // toma la variable y la aumenta i = 2.
+    if(i & j)                           // condicional if con operador logico (AND binario), cumpliendose.
+        j++;                            // toma la variable j y la aumenta en j = 4.
+    
+    cout<<i * j<<endl;                  // comando "cout" para imprimir en pantalla la multiplicación de i*j = 2*4, resultado = 8 y un "endl" para salto de pagina
+    return 0;                           // return de la funcion main.
+}
