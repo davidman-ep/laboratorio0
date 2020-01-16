@@ -1,0 +1,21 @@
+// Codigo número 3
+#include <iostream>                                   // encabezado de c++, libreria estandar
+
+using namespace std;
+
+int main()                                            // funcion principal main.
+{
+    for(int i = 0; i < 4; ++i)                        // ciclo for con variable entera inicializando en i = 0, de 4 iteraciones y un pre incremento de la variable "i".
+    {
+        switch(i)                                     // condicional "switch" de multiples casos basado en la variable "i".
+        {
+            case 0: cout<<"0";                        // si "i" = 0, imprime "01", pre-aumenta a i=1 y continua en el ciclo "for" sin imprimir el "*".
+            case 1: cout<<"1"; continue;              // si "i" = 1, imprime "1", pre-aumenta a i=2 y continua en el ciclo sin imprimir el "*".
+            case 2: cout<<"2"; break;                 // si "i" = 2, imprime "2*", pre-aumenta a i=3, por el "break" rompe el ciclo e imprime el "*".
+            default: cout<<"D"; break;                // por "default" siendo "i" = 3, immprime "D*",por el "break" rompe el ciclo e imprime el "*".
+        }
+        
+        cout<<"*";                                    // dando como resultado del cilo "for" y "switch" = " 0112*D* ".
+    }
+    return 0;                                         // return de la función main.
+}
