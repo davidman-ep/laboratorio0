@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+//Desarrolle esta función de acuero al siguiente algoritmo:
+// Si el valor del número 'a' es igual a cero entonces retorne el valor de 'b'
+// Si 'a' no es cero, entonces retorne el resultado de ejecutar mcd (recursión)
+// pero los parámetros de entrada son primero: el módulo entre 'b' y 'a', y segundo el número 'a'
+
+
+// Función que retorna el MCD entre dos números a y b
+
+int mcd(int a, int b){
+    if (a==0){
+        return b;
+    }
+    if (a!=0){
+        return mcd(b%a,a);
+    }
+
+}
+
+int main(){
+    int a,b;
+    cout<< "por favor ingresar un numero: "; cin>>a;
+    cout<< "por favor ingresar un numero: "; cin>>b;
+    cout<< "El maximo comun divisor es: "<<mcd(a,b)<<endl;
+
+    return 0;
+}
+
+
+
