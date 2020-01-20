@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int mcdArreglo(int arr[], int n)
+{
+    int resultado=arr[0];
+    int r;
+
+    for (int i=1; i<5; i++){
+
+        resultado=arr[i];
+
+        if(i==1){
+           resultado = arr[i];
+        }
+
+        do{
+            r=resultado%arr[i-1];
+            resultado=arr[i-1];
+            arr[i-1]=r;
+
+        }while(r!=0);        
+    }    
+    return resultado;
+
+}
+
+int main()
+{
+    int arr[] = { 2, 4, 6, 8, 16 };
+    int n = sizeof(arr) / sizeof(arr[0]);
+    cout << mcdArreglo(arr, n) << endl;    
+    return 0;
+}
